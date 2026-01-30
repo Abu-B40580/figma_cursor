@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: theme('fontFamily.sans');
+    color: #3b3222;
+    background-color: theme('colors.background.DEFAULT');
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply m-0 min-h-screen bg-background text-[#3b3222];
+  }
+
+  a {
+    @apply text-inherit no-underline;
+  }
+}
+
